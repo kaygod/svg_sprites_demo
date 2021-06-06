@@ -1,0 +1,43 @@
+// 默认主题
+$icon-color:red;
+$background-color:#fff;
+
+// 主题1
+$icon-color1:gray;
+$background-color1:#eee;
+
+// 主题2
+$icon-color2:blue;
+$background-color2:#999;
+
+// 用于给svg填充颜色
+@mixin fill {
+    fill:$icon-color; //默认颜色用默认主题
+    [data-theme = "theme1"] & { //切换到主题1时的颜色
+        fill:$icon-color1;
+    }
+    [data-theme = "theme2"] & { //切换到主题2时的颜色
+        fill:$icon-color2;
+    }
+}
+//设置color属性
+@mixin color {
+    color:$icon-color; //默认颜色用默认主题
+    [data-theme = "theme1"] & { //切换到主题1时的颜色
+        color:$icon-color1;
+    }
+    [data-theme = "theme2"] & { //切换到主题2时的颜色
+        color:$icon-color2;
+    }
+}
+
+//设置背景颜色
+@mixin backgroudColor {
+    background-color:$background-color; //默认颜色用默认主题
+    [data-theme = "theme1"] & { //切换到主题1时的颜色
+        background-color:$background-color1;
+    }
+    [data-theme = "theme2"] & { //切换到主题2时的颜色
+        background-color:$background-color2;
+    }
+}

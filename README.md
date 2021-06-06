@@ -1,4 +1,4 @@
-# my-app
+# svg_sprites_demo
 
 ## Project setup
 ```
@@ -15,5 +15,4 @@ yarn serve
 yarn build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
